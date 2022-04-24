@@ -16,7 +16,10 @@ def editFile(numberOfCommits):
     getDateData()
     file = open('file.txt', 'a')
     file.write(date + " " + hour + "\n")
+    file.close()
     for i in range(0, numberOfCommits):
+        file = open('file.txt', 'a')
+        
         file.write(str(i + 1) + "/" + str(numberOfCommits) + "\n")
         file.close()
         gitConfig()
