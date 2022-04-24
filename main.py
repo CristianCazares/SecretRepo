@@ -1,6 +1,7 @@
 import os
 import random
 import datetime
+import time
 
 
 dateData = datetime.datetime.now()
@@ -17,7 +18,10 @@ def editFile(numberOfCommits):
     file.write(date + " " + hour + "\n")
     for i in range(0, numberOfCommits):
         file.write(str(i + 1) + "/" + str(numberOfCommits) + "\n")
-    file.close()
+        file.close()
+        gitConfig()
+        commit()
+        time.sleep(1)
 
 def gitConfig():
     os.system('git config --global user.email "cm_cjavier@hotmail.com"')
@@ -67,7 +71,6 @@ def determinateCommits():
 def main():
     os.system("clear")
     determinateCommits()
-    gitConfig()
-    commit()
+    
 
 main()
