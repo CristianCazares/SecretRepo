@@ -4,4 +4,3 @@ pyproject.toml
 replit.nix
 venv/
 test.py
-keep_on.py
