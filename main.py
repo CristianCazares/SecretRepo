@@ -20,3 +20,5 @@ def keep_on():
         time.sleep(60)
         main()
         print("commitMade")
+
+keep_on()

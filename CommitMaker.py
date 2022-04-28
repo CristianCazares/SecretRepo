@@ -79,5 +79,3 @@ def main():
     os.system("clear")
     determinateCommits()
 
-
-main()
