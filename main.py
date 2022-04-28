@@ -11,7 +11,11 @@ hour = ""
 def getDateData():
     global date, hour
     date = str(dateData.day) + "-" + str(dateData.month).zfill(2) + "-" + str(dateData.year)
-    hour = str(dateData.hour - 6).zfill(2) + ":" + str(dateData.minute).zfill(2) + ":" + str(dateData.second).zfill(2)
+    fixedTimezone = -6
+    if(dateData.hour < abs(fixedTimezone)):
+        fixedTimezone += 24
+    
+    hour = str(dateData.hour + fixedTimezone).zfill(2) + ":" + str(dateData.minute).zfill(2) + ":" + str(dateData.second).zfill(2)
 
 def editFile(numberOfCommits):
     getDateData()
@@ -75,6 +79,6 @@ def determinateCommits():
 def main():
     os.system("clear")
     determinateCommits()
-    
 
+keep_on()
 main()
