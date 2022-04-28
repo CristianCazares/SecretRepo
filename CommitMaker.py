@@ -9,6 +9,7 @@ date = ""
 hour = ""
 def getDateData():
     global date, hour
+    dateData = datetime.datetime.now()
     date = str(dateData.day) + "-" + str(dateData.month).zfill(2) + "-" + str(dateData.year)
     fixedTimezone = -6
     if(dateData.hour < abs(fixedTimezone)):

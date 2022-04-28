@@ -17,7 +17,7 @@ def keep_on():
     t = Thread(target=run)
     t.start()
     while 1:
-        time.sleep(60)
+        time.sleep(600)
         main()
         print("commitMade")
 
