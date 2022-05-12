@@ -21,4 +21,5 @@ def keep_on():
         main()
         print("\n\ncommitMade")
 
-keep_on()
+#keep_on()
+main()
