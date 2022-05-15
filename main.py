@@ -20,6 +20,4 @@ def keep_on():
         time.sleep(86400)
         main()
         print("\n\ncommitMade")
-
-#keep_on()
 main()
