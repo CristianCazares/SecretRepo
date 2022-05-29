@@ -38,7 +38,7 @@ def gitConfig():
 def commit():
     os.system("clear||cls")
     os.system("git add .")
-    os.system("git commit -m '[ENHANCEMENT] Secret commit'")
+    os.system('git commit -m "[ENHANCEMENT] Secret commit"')
     os.system("git push origin main")
     
 def determinateCommits():
