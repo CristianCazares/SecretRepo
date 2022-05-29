@@ -36,7 +36,7 @@ def gitConfig():
     os.system('git config --global user.name "CristianCazares"')
     
 def commit():
-    os.system("clear")
+    os.system("clear||cls")
     os.system("git add .")
     os.system("git commit -m '[ENHANCEMENT] Secret commit'")
     os.system("git push origin main")
@@ -77,6 +77,7 @@ def determinateCommits():
         
 
 def main():
-    os.system("clear")
+    os.system("clear||cls")
     determinateCommits()
 
+main()
